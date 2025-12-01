@@ -33,13 +33,10 @@ function getComputerChoice () {
    }
 
 
-
-
+    function playGame () {  
 
     let humanScore = 0;
     let computerScore = 0;
-
- console.log("Human Score" + humanScore, "computer score" + computerScore); 
 
 
  function playRound (humanChoice, computerChoice) {
@@ -73,14 +70,9 @@ function getComputerChoice () {
     }
 
 
+    console.log(`COMPUTER SCORE: ${computerScore}`) ;
+    console.log(`HUMAN SCORE: ${humanScore}`);
  }
-
-
- const humanChoice = getHumanChoice();
- const computerChoice = getComputerChoice();
-
-
- playRound(humanChoice, computerChoice);
 
 
  const humanSelection = getHumanChoice();
@@ -88,3 +80,6 @@ function getComputerChoice () {
 
 
   playRound(humanSelection, computerSelection);
+ 
+
+}

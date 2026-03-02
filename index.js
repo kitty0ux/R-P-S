@@ -2,14 +2,11 @@
 
       let computerInput = Math.floor( Math.random( ) * 3 );
 
-      if( computerInput === 0 ) {
-        //console.log( "rock" );
+       if( computerInput === 0 ) {
         return "rock";
-      }else if( computerInput === 1 ) {
-        //console.log( "paper");
+      } else if( computerInput === 1 ) {
         return "paper";
-      }else {
-        //console.log( "scissors" );
+      } else {
         return "scissors";
       }
    }
@@ -19,14 +16,11 @@
 
       let humanInput = prompt( "rock, paper or scissors?" ).toLowerCase( );
  
-      if ( humanInput === "rock" ) {
-        //console.log( "rock");
+       if ( humanInput === "rock" ) {
         return "rock"
-      }else if( humanInput === "paper" ) {
-        //console.log( "paper" );
+      } else if( humanInput === "paper" ) {
         return "paper";
-      }else{
-       // console.log( "scissors");
+      } else{
         return "scissors";
       }
    }
@@ -76,11 +70,11 @@
       }
 
  
- // playRound( getHumanChoice( ), getComputerChoice( ) );
+ 
 
    
 
-   for( let i = 0; i < 4; i++ ) {
+   for( let i = 0; i < 5; i++ ) {
     playRound( getHumanChoice( ), getComputerChoice( ) );
    }
 }
